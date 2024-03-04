@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>usmonov.uz</title>
+    <title>Navro'z Usmonov</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- box icons -->
@@ -15,7 +16,7 @@
     <!-- header section start -->
 
     <header class="header">
-      <a href="#" class="logo">Navruz.<span class="animate" style="--i:1;"></span></a>
+      <a href="#" class="logo"><img src="./images/logo.png" alt="logo"><span class="animate" style="--i:1;"></span></a>
 
       <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
@@ -290,12 +291,12 @@
       <form action="#">
         <div class="input-box">
           <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
+            <input type="text" placeholder="Full Name" id="name" autocomplete="off" class="item" required />
             <span class="focus"></span>
           </div>
 
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input type="text" placeholder="Email Address" id="email" autocomplete="off" class="item" required />
             <span class="focus"></span>
           </div>
 
@@ -304,12 +305,12 @@
 
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input type="number" placeholder="Mobile Number" id="phone" autocomplete="off" class="item" required />
             <span class="focus"></span>
           </div>
 
           <div class="input-field">
-            <input type="text" placeholder="Email Subject" required />
+            <input type="text" placeholder="Email Subject" id="subject" autocomplete="off" class="item" required />
             <span class="focus"></span>
           </div>
 
@@ -322,10 +323,11 @@
             id=""
             cols="30"
             rows="10"
-            placeholder="Your Message"
+            placeholder="Your Message" id="message" 
+            class="item"
+            autocomplete="off"
             required></textarea>
           <span class="focus"></span>
-
           <span class="animate scroll" style="--i:7;"></span>
         </div>
 
